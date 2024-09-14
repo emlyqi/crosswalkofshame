@@ -12,7 +12,7 @@ export default defineSchema({
     body: v.string(),
   }),
   camera_data: defineTable({
-    storageId: v.id("_storage"),  // storageId of images of pedestrians who violate rules
+    storageId: v.string(),  // storageId of images of pedestrians who violate rules
     crosswalk_name: v.string(), // implement later --> to identify different crosswalks/intersections
   }),
   crosser_data: defineTable({
