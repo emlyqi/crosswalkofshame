@@ -17,8 +17,8 @@ export default defineSchema({
   }),
   crosser_data: defineTable({
     cross_duration: v.float64(),  // defined as the amount of time (s) it takes for someone to enter and leave the intersection
-    arrival_time: v.float64(),  // the time (s) relative to the start of crosswalk countdown that pedestrians arrive at (+ve or zero)
-    cross_countdown: v.float64(), // the amount of time a given crosswalk allows pedestrians to cross (s)
+    // arrival_time: v.float64(),  // the time (s) relative to the start of crosswalk countdown that pedestrians arrive at (+ve or zero)
+    // cross_countdown: v.float64(), the amount of time a given crosswalk allows pedestrians to cross (s)
   }),
 });
 
