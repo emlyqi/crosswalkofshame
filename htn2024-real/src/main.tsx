@@ -5,7 +5,6 @@ import { ConvexProvider, ConvexReactClient } from "convex/react";
 import App from "./App.tsx";
 import "./index.css";
 import GalleryPage from "./pages/GalleryPage";
-import TestPage from "./pages/TestPage";
 import StatisticsPage from "./pages/StatisticsPage";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
@@ -14,10 +13,6 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <GalleryPage />,
-  },
-  {
-    path: "/test",
-    element: <TestPage />,
   },
   {
     path: "/statistics",

@@ -1,10 +1,6 @@
 import { query, mutation } from "./_generated/server";
 import { v } from "convex/values";
 
-export const generateUploadUrl = mutation(async (ctx) => {
-  return await ctx.storage.generateUploadUrl();
-});
-
 export const list = query({
   args: {},
   handler: async (ctx) => {
@@ -13,8 +9,6 @@ export const list = query({
     return camera_data;
   },
 });
-
-
 
 // Define a mutation that expects a storage ID
 export default mutation({
