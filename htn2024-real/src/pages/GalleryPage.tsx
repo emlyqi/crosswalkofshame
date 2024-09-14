@@ -3,6 +3,9 @@ import { Box, ImageList, ImageListItem } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Item } from "@radix-ui/react-toggle-group";
 import Gallery from "../components/Gallery";
+import car from "../assets/car.png";
+import greenPerson from "../assets/greenPerson.png";
+import orangePerson from "../assets/orangePerson.png";
 
 const GalleryPage = () => {
   return (
@@ -77,6 +80,11 @@ const GalleryPage = () => {
           </p>
         </Box>
       </Grid>
+      <img src={car} alt="car clipart"/> 
+      <img src={greenPerson} alt="green person clipart"/> 
+      <img src={greenPerson} alt="green person clipart"/> 
+      <img src={greenPerson} alt="green person clipart"/> 
+      <img src={orangePerson} alt="orange person clipart"/>
     </Grid>
   );
 };
