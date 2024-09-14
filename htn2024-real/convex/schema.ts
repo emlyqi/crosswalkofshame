@@ -1,5 +1,6 @@
 import { defineSchema, defineTable } from "convex/server";
 import { v } from "convex/values";
+import { format } from "path";
 
 // The schema is entirely optional.
 // You can delete this file (schema.ts) and the
@@ -11,7 +12,8 @@ export default defineSchema({
     body: v.string(),
   }),
   camera_data: defineTable({
-    image_description: v.string()
+    storageId: v.id("_storage"),
+    author: v.string(),
   }),
 });
 
