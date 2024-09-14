@@ -4,21 +4,44 @@ import Grid from "@mui/material/Grid2";
 
 const GalleryPage = () => {
   return (
-    <Box width="100%" height="100%" display="flex" alignItems="flex-start">
-      <Grid container spacing={2}>
+    <Grid
+      container
+      alignContent="center"
+      alignItems="center"
+      justifyContent="center"
+      bgcolor="#18251C"
+      minHeight="100vh"
+      minWidth="100vw"
+    >
+      <Grid
+        container
+        alignContent="center"
+        alignItems="flex-start"
+        justifyContent="space-evenly"
+        style={{
+          top: "0",
+          bottom: "0",
+          left: "0",
+          right: "0",
+          width: "100vw",
+          height: "100vh",
+          padding: "2rem",
+        }}
+      >
         <Box
-          bgcolor="#18251C"
-          width="100%"
-          height="100%"
           display="flex"
           justifyContent="flex-start"
           alignItems="flex-start"
           flexDirection="column"
+          style={{
+            width: "100vw",
+            height: "100vh",
+          }}
         >
-          <p>HELLO THIS IS THE GALLERY PAGE!!</p>
+          <p style={{ color: "#F5F5E7", marginTop: "0rem" }}>gallery of</p>
         </Box>
       </Grid>
-    </Box>
+    </Grid>
   );
 };
 
