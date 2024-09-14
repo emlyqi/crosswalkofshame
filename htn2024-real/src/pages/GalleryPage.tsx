@@ -1,6 +1,8 @@
 import React from "react";
-import { Box } from "@mui/material";
+import { Box, ImageList, ImageListItem } from "@mui/material";
 import Grid from "@mui/material/Grid2";
+import { Item } from "@radix-ui/react-toggle-group";
+import Gallery from "../components/Gallery";
 
 const GalleryPage = () => {
   return (
@@ -11,34 +13,68 @@ const GalleryPage = () => {
       justifyContent="center"
       bgcolor="#18251C"
       minHeight="100vh"
-      minWidth="100vw"
+      position="relative"
     >
       <Grid
         container
         alignContent="center"
-        alignItems="flex-start"
-        justifyContent="space-evenly"
+        alignItems="center"
+        justifyContent="center"
         style={{
-          top: "0",
-          bottom: "0",
-          left: "0",
-          right: "0",
-          width: "100vw",
-          height: "100vh",
-          padding: "2rem",
+          padding: "5rem",
         }}
       >
         <Box
           display="flex"
-          justifyContent="flex-start"
-          alignItems="flex-start"
           flexDirection="column"
-          style={{
-            width: "100vw",
-            height: "100vh",
-          }}
+          alignItems="flex-start"
+          width="80%"
+          maxWidth="540rem"
         >
-          <p style={{ color: "#F5F5E7", marginTop: "0rem" }}>gallery of</p>
+          <Box paddingBottom="5rem">
+            <p
+              style={{ color: "#F5F5E7", marginTop: "0rem", fontSize: "3rem" }}
+            >
+              crosswalk of
+            </p>
+            <p
+              style={{
+                color: "#FF4000",
+                marginTop: "0rem",
+                fontSize: "6rem",
+                fontWeight: "bold",
+                fontStyle: "italic",
+                lineHeight: "0.2",
+              }}
+            >
+              shame...
+            </p>
+          </Box>
+          <Box
+            display="flex"
+            justifyContent="center"
+            alignItems="center"
+            width="100%"
+            paddingBottom="2rem"
+          >
+            <Gallery />
+          </Box>
+        </Box>
+        <Box
+          position="absolute"
+          bottom="0"
+          padding="2rem"
+          display="flex"
+          justifyContent="center"
+          alignItems="center"
+          width="100%"
+        >
+          <p style={{ color: "#F5F5E7", marginTop: "0rem" }}>
+            <a href="/statistics" style={{ textDecoration: "underline" }}>
+              see stats
+            </a>{" "}
+            for unsafe crossing activities
+          </p>
         </Box>
       </Grid>
     </Grid>

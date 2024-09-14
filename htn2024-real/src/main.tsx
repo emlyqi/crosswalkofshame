@@ -6,6 +6,7 @@ import App from "./App.tsx";
 import "./index.css";
 import GalleryPage from "./pages/GalleryPage";
 import TestPage from "./pages/TestPage";
+import StatisticsPage from "./pages/StatisticsPage";
 
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
@@ -18,6 +19,10 @@ const router = createBrowserRouter([
     path: "/test",
     element: <TestPage />,
   },
+  {
+    path: "/statistics",
+    element: <StatisticsPage />,
+  }
 ]);
 
 const convex = new ConvexReactClient(import.meta.env.VITE_CONVEX_URL as string);
