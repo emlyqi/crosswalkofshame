@@ -53,6 +53,7 @@ export default function App() {
     imageInput.current!.value = "";
   }
   return (
+    //comment
     <form onSubmit={handleSendImage}>
       <input
         type="file"
