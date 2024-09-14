@@ -16,6 +16,7 @@ import type {
   FunctionReference,
 } from "convex/server";
 import type * as camera_data from "../camera_data.js";
+import type * as crosser_data from "../crosser_data.js";
 import type * as messages from "../messages.js";
 
 /**
@@ -28,6 +29,7 @@ import type * as messages from "../messages.js";
  */
 declare const fullApi: ApiFromModules<{
   camera_data: typeof camera_data;
+  crosser_data: typeof crosser_data;
   messages: typeof messages;
 }>;
 export declare const api: FilterApi<

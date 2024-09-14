@@ -26,7 +26,7 @@ export default function App() {
   const imageInput = useRef<HTMLInputElement>(null);
   const [selectedImage, setSelectedImage] = useState<File | null>(null);
 
-  const [name] = useState(() => "User " + Math.floor(Math.random() * 10000));
+  // const [name] = useState(() => "User " + Math.floor(Math.random() * 10000));
   async function handleSendImage(event: FormEvent) {
     event.preventDefault();
 
@@ -45,8 +45,9 @@ export default function App() {
     console.log(result);
 
     const { storageId } = await result.json();
+    const name = "default_crosswalk"
     // Step 3: Save the newly allocated storage id to the database
-    await sendImage({storageId, author: name});
+    await sendImage({storageId, crosswalk_name: name});
 
     setSelectedImage(null);
     imageInput.current!.value = "";
