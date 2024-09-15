@@ -40,5 +40,4 @@ export default mutation({
   });
 
 
-const url : string = process.env.VITE_CONVEX_URL +"/api/mutation";
 
