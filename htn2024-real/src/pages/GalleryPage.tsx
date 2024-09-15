@@ -31,7 +31,7 @@ const GalleryPage = () => {
           display="flex"
           flexDirection="column"
           alignItems="flex-start"
-          width="80%"
+          width="100%"
           maxWidth="540rem"
         >
           <Box paddingBottom="5rem">
@@ -73,18 +73,18 @@ const GalleryPage = () => {
           width="100%"
         >
           <p style={{ color: "#F5F5E7", marginTop: "0rem" }}>
-            <a href="/statistics" style={{ textDecoration: "underline" }}>
+            <a href="/statistics" style={{ textDecoration: "underline", color:"#FF541B" }}>
               see stats
             </a>{" "}
-            for unsafe crossing activities
+            for recent crossing activities
           </p>
         </Box>
       </Grid>
-      <img src={car} alt="car clipart"/> 
-      <img src={greenPerson} alt="green person clipart"/> 
-      <img src={greenPerson} alt="green person clipart"/> 
-      <img src={greenPerson} alt="green person clipart"/> 
-      <img src={orangePerson} alt="orange person clipart"/>
+      <img src={car} alt="car clipart" style={{position:"absolute", scale:"10%"}}/> 
+      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"10%"}}/> 
+      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"10%"}}/> 
+      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"10%"}}/> 
+      <img src={orangePerson} alt="orange person clipart" style={{position:"absolute", scale:"10%"}}/>
     </Grid>
   );
 };

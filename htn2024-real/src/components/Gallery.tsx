@@ -1,14 +1,19 @@
 import { ImageList, ImageListItem } from "@mui/material";
 import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
-
+import ReactCardFlip from "react-card-flip";
 
 const Gallery = () => {
   const photos = useQuery(api.camera_data.list) || [];
 
   return (
     <>
-      <ImageList sx={{ width: "100%", maxWidth:"75rem", marginTop: "2rem"}} cols={7} rowHeight={220} gap={56}>
+      <ImageList
+        sx={{ width: "100%", maxWidth: "75rem", maxHeight: "189rem", marginTop: "2rem" }}
+        cols={7}
+        rowHeight={280}
+        gap={56}
+      >
         {photos.map((photo) => (
           <ImageListItem key={photo._id}>
             <img
@@ -19,14 +24,15 @@ const Gallery = () => {
               style={{
                 borderRadius: "8px",
                 border: "8px solid white",
+                objectFit: "cover",
               }}
             />
           </ImageListItem>
         ))}
       </ImageList>
     </>
-  )
-}
+  );
+};
 
 export default Gallery;
 
