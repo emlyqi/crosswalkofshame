@@ -15,7 +15,7 @@ const GalleryPage = () => {
       alignItems="center"
       justifyContent="center"
       bgcolor="#18251C"
-      minHeight="100%"
+      minHeight="100vh"
       position="relative"
     >
       <Grid
@@ -80,11 +80,11 @@ const GalleryPage = () => {
           </p>
         </Box>
       </Grid>
-      <img src={car} alt="car clipart" style={{position:"absolute", scale:"10%"}}/> 
-      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"10%"}}/> 
-      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"10%"}}/> 
-      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"10%"}}/> 
-      <img src={orangePerson} alt="orange person clipart" style={{position:"absolute", scale:"10%"}}/>
+      {/* <img src={car} alt="car clipart" style={{position:"absolute", scale:"10%"}}/>  */}
+      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"30%", left:"10%", top:"15%"}}/> 
+      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"30%", left:"55%", top:"5%"}}/> 
+      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"30%", left:"72%", top:"30%"}}/> 
+      <img src={orangePerson} alt="orange person clipart" style={{position:"absolute", scale:"20%", left:"10%", top:"20%"}}/>
     </Grid>
   );
 };
