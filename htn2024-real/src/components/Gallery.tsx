@@ -1,8 +1,5 @@
-import React from "react";
-import { Box, ImageList, ImageListItem } from "@mui/material";
-import Grid from "@mui/material/Grid2";
-import { Item } from "@radix-ui/react-toggle-group";
-import { useMutation, useQuery } from "convex/react";
+import { ImageList, ImageListItem } from "@mui/material";
+import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
 import ReactCardFlip from "react-card-flip";
 
