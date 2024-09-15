@@ -10,6 +10,16 @@ export const list = query({
   },
 });
 
+export const data = query({
+  args: {},
+  handler: async (ctx) => {
+    // Grab the most recent crosser data.
+    const crosser_data = await ctx.db.query("crosser_data").order("desc").take(100);
+    return crosser_data;
+  },
+});
+
+
 // Define a mutation that expects a storage ID
 export default mutation({
     // Define the input validation schema

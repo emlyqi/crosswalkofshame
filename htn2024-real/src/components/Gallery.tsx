@@ -6,6 +6,8 @@ import ReactCardFlip from "react-card-flip";
 const Gallery = () => {
   const photos = useQuery(api.camera_data.list) || [];
 
+  console.log(photos)
+
   return (
     <>
       <ImageList
