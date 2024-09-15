@@ -14,8 +14,8 @@ export const data = query({
   args: {},
   handler: async (ctx) => {
     // Grab the most recent crosser data.
-    const crosser_data = await ctx.db.query("crosser_data").order("desc").take(100);
-    return crosser_data;
+    const camera_data = await ctx.db.query("camera_data").order("desc").take(50);
+    return camera_data;
   },
 });
 
