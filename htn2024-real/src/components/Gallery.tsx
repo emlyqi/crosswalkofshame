@@ -1,7 +1,6 @@
 import { ImageList, ImageListItem } from "@mui/material";
 import { useQuery } from "convex/react";
 import { api } from "../../convex/_generated/api";
-import ReactCardFlip from "react-card-flip";
 
 const Gallery = () => {
   const photos = useQuery(api.camera_data.list) || [];
