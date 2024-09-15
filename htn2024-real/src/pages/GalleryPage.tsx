@@ -15,7 +15,7 @@ const GalleryPage = () => {
       alignItems="center"
       justifyContent="center"
       bgcolor="#18251C"
-      minHeight="100vh"
+      minHeight="100%"
       position="relative"
     >
       <Grid

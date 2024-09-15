@@ -2,3 +2,4 @@ requests
 ultralytics
 python-dotenv
 opencv-python
+mss
