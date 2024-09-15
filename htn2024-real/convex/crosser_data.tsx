@@ -32,6 +32,7 @@ export default mutation({
   }
 });
 
+
 export const addCrossDuration = mutation({
   args: { cross_duration: v.float64() },
   handler: async (ctx, { cross_duration }) => {

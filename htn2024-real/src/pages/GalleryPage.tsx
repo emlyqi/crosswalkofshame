@@ -3,9 +3,10 @@ import { Box, ImageList, ImageListItem } from "@mui/material";
 import Grid from "@mui/material/Grid2";
 import { Item } from "@radix-ui/react-toggle-group";
 import Gallery from "../components/Gallery";
-import car from "../assets/car.png";
+// import car from "../assets/car.png";
 import greenPerson from "../assets/greenPerson.png";
 import orangePerson from "../assets/orangePerson.png";
+import logo from "../assets/logo.png";
 
 const GalleryPage = () => {
   return (
@@ -15,9 +16,10 @@ const GalleryPage = () => {
       alignItems="center"
       justifyContent="center"
       bgcolor="#18251C"
-      minHeight="100%"
+      minHeight="100vh"
       position="relative"
     >
+      <img src={logo} alt="logo" style={{position:"absolute", scale:"40%", top:"5%", right:0}}/>
       <Grid
         container
         alignContent="center"
@@ -54,8 +56,9 @@ const GalleryPage = () => {
             </p>
           </Box>
           <Box
+            position="relative"
             display="flex"
-            justifyContent="center"
+            justifyContent="space-between"
             alignItems="center"
             width="100%"
             paddingBottom="2rem"
@@ -80,11 +83,11 @@ const GalleryPage = () => {
           </p>
         </Box>
       </Grid>
-      <img src={car} alt="car clipart" style={{position:"absolute", scale:"10%"}}/> 
-      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"10%"}}/> 
-      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"10%"}}/> 
-      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"10%"}}/> 
-      <img src={orangePerson} alt="orange person clipart" style={{position:"absolute", scale:"10%"}}/>
+      {/* <img src={car} alt="car clipart" style={{position:"absolute", scale:"10%"}}/>  */}
+      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"30%", left:"10%", top:"15%"}}/> 
+      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"30%", left:"55%", top:"5%"}}/> 
+      <img src={greenPerson} alt="green person clipart" style={{position:"absolute", scale:"30%", left:"72%", top:"30%"}}/> 
+      <img src={orangePerson} alt="orange person clipart" style={{position:"absolute", scale:"20%", left:"10%", top:"20%"}}/>
     </Grid>
   );
 };
