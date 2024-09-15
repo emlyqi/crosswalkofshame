@@ -40,14 +40,3 @@ export const addCrossDuration = mutation({
     await ctx.db.insert("crosser_data", { cross_duration });
   },
 });
-
-
-const url : string = process.env.VITE_CONVEX_URL +"/api/mutation";
-
-// export const send = mutation({
-//   args: { cross_duration: v.float64() },
-//   handler: async (ctx, { cross_duration }) => {
-//     // Send a new message
-//     await ctx.db.insert("crosser_data", { cross_duration });
-//   },
-// });
